@@ -26,7 +26,7 @@ includes a complete SI-based EPG.
 %description -l pl
 Klear to odtwarzacz DVB TV oraz nagrywarka dyskowa dla Linuksa.
 Zawiera wewnêtrzne tunery dla DVB-S, DVB-S i DVB-T, system nagrywania
-(na ¿wyo i z opó¼nieniem) z ró¿nymi formatami nagrywania, zrzuty
+(na ¿ywo i z opó¼nieniem) z ró¿nymi formatami nagrywania, zrzuty
 ekranu, tryb bezprzeplotowy i ró¿ne wtyczki wyj¶ciowe. Klear zawiera
 równie¿ kompletny EPG oparty na SI.
 
@@ -46,6 +46,10 @@ scons install \
 	kde_libs_htmldir=%{_kdedocdir} \
 	kdelnkdir=%{_desktopdir} \
 
+install -d $RPM_BUILD_ROOT%{_desktopdir}/kde
+mv -f $RPM_BUILD_ROOT%{_datadir}/applnk/Multimedia/klear.desktop \
+	$RPM_BUILD_ROOT%{_desktopdir}/kde
+
 %find_lang %{name} --with-kde
 
 %clean
@@ -54,7 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/klear
-%{_datadir}/applnk/Multimedia/klear.desktop
-%dir %{_datadir}/apps/klear
 %{_datadir}/apps/klear
+%{_desktopdir}/kde/klear.desktop
 %{_iconsdir}/hicolor/*/apps/klear.png
