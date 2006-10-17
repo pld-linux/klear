@@ -1,13 +1,12 @@
-%define		_ver	alpha1
 Summary:	Klear - DVB TV viewer
 Summary(pl):	Klear - odtwarzacz DVB TV
 Name:		klear
 Version:	0.6.0
-Release:	0.%{_ver}.1
+Release:	0.1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://www.tr0ll.net/kraus.tk/projects/klear/sources/%{name}-%{version}-%{_ver}.tar.gz
-# Source0-md5:	2b699a1884bbe08958299a65a4a59615
+Source0:	http://www.tr0ll.net/kraus.tk/projects/klear/sources/%{name}-%{version}.tar.gz
+# Source0-md5:	90889c1cbef48a7ffaf41e3bce39781c
 URL:		http://www.klear.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -31,7 +30,7 @@ ekranu, tryb bezprzeplotowy i ró¿ne wtyczki wyj¶ciowe. Klear zawiera
 równie¿ kompletny EPG oparty na SI.
 
 %prep
-%setup -q -n %{name}-%{version}-%{_ver}
+%setup -q
 
 %build
 scons \
