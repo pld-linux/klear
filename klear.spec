@@ -1,5 +1,5 @@
 Summary:	Klear - DVB TV viewer
-Summary(pl.UTF-8):   Klear - odtwarzacz DVB TV
+Summary(pl.UTF-8):	Klear - odtwarzacz DVB TV
 Name:		klear
 Version:	0.6.0
 Release:	0.1
