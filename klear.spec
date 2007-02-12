@@ -1,5 +1,5 @@
 Summary:	Klear - DVB TV viewer
-Summary(pl):	Klear - odtwarzacz DVB TV
+Summary(pl.UTF-8):   Klear - odtwarzacz DVB TV
 Name:		klear
 Version:	0.6.0
 Release:	0.1
@@ -22,12 +22,12 @@ and scheduled recording) with different recording formats,
 screenshots, deinterlacing and different backend engines. Klear also
 includes a complete SI-based EPG.
 
-%description -l pl
+%description -l pl.UTF-8
 Klear to odtwarzacz DVB TV oraz nagrywarka dyskowa dla Linuksa.
-Zawiera wewnêtrzne tunery dla DVB-S, DVB-S i DVB-T, system nagrywania
-(na ¿ywo i z opó¼nieniem) z ró¿nymi formatami nagrywania, zrzuty
-ekranu, tryb bezprzeplotowy i ró¿ne wtyczki wyj¶ciowe. Klear zawiera
-równie¿ kompletny EPG oparty na SI.
+Zawiera wewnÄ™trzne tunery dla DVB-S, DVB-S i DVB-T, system nagrywania
+(na Å¼ywo i z opÃ³Åºnieniem) z rÃ³Å¼nymi formatami nagrywania, zrzuty
+ekranu, tryb bezprzeplotowy i rÃ³Å¼ne wtyczki wyjÅ›ciowe. Klear zawiera
+rÃ³wnieÅ¼ kompletny EPG oparty na SI.
 
 %prep
 %setup -q
