@@ -2,7 +2,7 @@ Summary:	Klear - DVB TV viewer
 Summary(pl.UTF-8):	Klear - odtwarzacz DVB TV
 Name:		klear
 Version:	0.6.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.tr0ll.net/kraus.tk/projects/klear/sources/%{name}-%{version}.tar.gz
