@@ -11,7 +11,7 @@ URL:		http://www.klear.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 9:3.2.0
-BuildRequires:	rpmbuild(macros) >= 1.129
+BuildRequires:	rpmbuild(macros) >= 1.385
 BuildRequires:	scons
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,16 +32,17 @@ również kompletny EPG oparty na SI.
 %prep
 %setup -q
 
+rm -f po/it_old.po
+
 %build
-scons \
+%scons \
 	qtincludes=%{_includedir}/qt \
 	qtlibs=%{_libdir}/qt \
 	qtdir=%{_prefix}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-scons install \
+%scons install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir=%{_kdedocdir} \
 	kde_libs_htmldir=%{_kdedocdir} \
